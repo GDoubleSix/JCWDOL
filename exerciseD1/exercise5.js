@@ -12,27 +12,30 @@
 // 6. Selesai
 
 
-// function selisih(tanggal1,tanggal2){
-//     if(tanggal1 > tanggal2){
-//         let hitungT1 = tanggal1 - tanggal2
+function selisih(tanggal1,tanggal2){
+    if(tanggal1 > tanggal2){
+        let hitungT1 = tanggal1 - tanggal2
 
-//         console.log(`\n"Tanggal A = 2022-01-${tanggal1}"\n"Tanggal B = 2022-01-${tanggal2}"`);
-//         console.log(`Selisih Tanggal = ${hitungT1}`);
+        console.log(`\n"Tanggal A = 2022-01-${tanggal1}"\n"Tanggal B = 2022-01-${tanggal2}"`);
+        console.log(`Selisih Tanggal = ${hitungT1}`);
 
-//     }else if(tanggal2 > tanggal1){
-//         let hitungT2 = tanggal2 - tanggal1
+    }else if(tanggal2 > tanggal1){
+        let hitungT2 = tanggal2 - tanggal1
 
-//         console.log(`\n"Tanggal A = 2022-01-${tanggal1}"\n"Tanggal B = 2022-01-${tanggal2}"`);
-//         console.log(`Selisih Tanggal = ${hitungT2}`);
+        console.log(`\n"Tanggal A = 2022-01-${tanggal1}"\n"Tanggal B = 2022-01-${tanggal2}"`);
+        console.log(`Selisih Tanggal = ${hitungT2}`);
         
-//     }else{
-//         console.log('Tanggal yang dimasukkan sama');
-//     }
-// }
+    }else{
+        console.log('Tanggal yang dimasukkan sama');
+    }
+}
 
-// let tanggal1 = 18
-// let tanggal2 = 28
-// selisih(tanggal1,tanggal2)
+let tanggal1 = 18
+let tanggal2 = 28
+selisih(tanggal1,tanggal2)
+
+
+//==========================================================================================
 
 const date1 = new Date("2023-11-01")
 const date2 = new Date("2023-10-20")

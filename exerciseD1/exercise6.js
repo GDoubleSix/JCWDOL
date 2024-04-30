@@ -23,3 +23,12 @@ const month = Math.floor (days / 30)
 const remainingDays = Math.floor(remainderDays % 30)
 
 console.log(`${years} years, ${month} month, ${remainingDays} days`);
+
+
+//=======================================================================
+const hari = 400;
+const tahun = Math.floor(hari/365);
+const bulan = Math.floor((hari % 365)/30);
+const tanggal = Math.floor((hari%365)%365);
+
+console.log(`${tahun} years, ${bulan} month, ${tanggal} days`);
