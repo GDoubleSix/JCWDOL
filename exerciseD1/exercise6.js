@@ -17,8 +17,8 @@
 
 
 const days = 400
+const remainderDays = days % 365 //Modulo
 const years = Math.floor(days / 365)
-const remainderDays = days % 365
 const month = Math.floor (days / 30)
 const remainingDays = Math.floor(remainderDays % 30)
 
