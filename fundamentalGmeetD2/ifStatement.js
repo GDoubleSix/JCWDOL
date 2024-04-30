@@ -139,10 +139,12 @@
 // } while (count <= 7)
 
 // Break =========================================================
-const sum = 0;
-while (sum == true) {
+let sum = 0;
+while (true) {
     console.log("sum : " + sum);
-    if(sum <= 5) break;
+    if(sum >= 5){
+        break
+    };
     sum += 1
 }
 // while(true){
