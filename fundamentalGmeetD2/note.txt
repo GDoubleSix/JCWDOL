@@ -1,3 +1,3 @@
-Conditional statement
+Conditional statement => menentukan alur / flow pada program
 Loop statement => untuk perulangan seperti do while, for loop
 if statement => basic fondation dari conditional statement harus bernilai boolean

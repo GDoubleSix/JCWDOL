@@ -41,5 +41,5 @@ const date1 = new Date("2023-11-01")
 const date2 = new Date("2023-10-20")
 const bedaTanggal = Math.abs(date2 - date1) //math absolute => hasilnya akan selalu positif
 
-const bedaHari = Math.round(bedaTanggal / (1000 *3600 * 24))
+const bedaHari = Math.round(bedaTanggal / (1000 *3600 * 24)) //Math.round untuk pembulatan angka
 console.log(`Perbedaan hari ${bedaHari}`);
