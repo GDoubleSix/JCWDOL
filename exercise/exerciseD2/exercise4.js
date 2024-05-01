@@ -4,20 +4,16 @@
 
 //RUMUS : S= n*(n+1)/2
 
+//cara 1
+let inputNumber = 15;
+let sum = inputNumber * (inputNumber+1)/2
+console.log(sum);
 
-// let n = 3
-// while () {
-//     let sum = n * (n+1) /2
-//     console.log(sum);
-// }
 
-// let sum = 3;
-// while (true) {
-//     console.log("sum : " + sum);
-//     if(sum >= 5){
-//         n * (n+1)/ 2
-//         console.log(sum);
-//         break
-//     };
-//     sum += 1
-// }
+//cara 2
+let inputNmbr = 9;
+let jumlah = 0;
+for (let i = 1; i <= inputNmbr; i++) {
+    jumlah += i;
+}
+console.log(jumlah);
