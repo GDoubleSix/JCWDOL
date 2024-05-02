@@ -2,9 +2,11 @@
 // Example:4!→4×3x2×1=24
 // Example:6!→6×5x4x3x2x1=720
 
-jumlah = 1
-facNumber = 6
-for (let i = facNumber; i >= 1; i--) {
-    jumlah *= i
+number = 8
+facNumber = 1
+for (let i = number; i >= 1; i--) {
+    facNumber *= i
+    console.log(i);
+    console.log(facNumber);
 }
-console.log(jumlah);
+console.log(`${number}! = ${facNumber}`);

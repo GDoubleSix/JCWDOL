@@ -5,15 +5,17 @@
 //RUMUS : S= n*(n+1)/2
 
 //cara 1
-let inputNumber = 15;
+let inputNumber = 5;
 let sum = inputNumber * (inputNumber+1)/2
 console.log(sum);
 
 
 //cara 2
-let inputNmbr = 9;
+let inputNmbr = 3;
 let jumlah = 0;
 for (let i = 1; i <= inputNmbr; i++) {
     jumlah += i;
+    console.log(i);
+    console.log(jumlah);
 }
-console.log(jumlah);
+console.log(`${inputNmbr} = ${jumlah}`);

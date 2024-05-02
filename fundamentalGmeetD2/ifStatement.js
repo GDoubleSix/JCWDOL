@@ -78,9 +78,9 @@
 // const umur = 18
 // const punyaSim = true
 // if(umur >= 18 && punyaSim == true){
-//     console.log("Boleh membawa kendaraan");
+    // console.log("Boleh membawa kendaraan");
 // }else{
-//     console.log("Tidak boleh membawa kendaraan");
+    // console.log("Tidak boleh membawa kendaraan");
 // }
 
 // !(NOT) => Membalikkan sebuah nilai boolean
