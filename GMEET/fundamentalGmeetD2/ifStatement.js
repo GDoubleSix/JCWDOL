@@ -140,13 +140,13 @@
 
 // Break =========================================================
 let sum = 0;
-// while (true) {
-//     console.log("sum : " + sum);
-//     if(sum >= 5){
-//         break
-//     };
-//     sum += 1
-// }
+while (true) {
+    console.log("sum : " + sum);
+    if(sum >= 5){
+        break
+    };
+    sum += 1
+}
 // while(true){
 //     console.log(`sum : ${sum}`);
     
