@@ -32,8 +32,9 @@ const shouwOutput = () => {
 // Case. Menampilkan angka 1 - bebas diubah
 const ShowNumber = (number) => {
     for (let i = 1; i<=number; i++)
-        console.log(i);
+        return (i);
 }
+console.log(ShowNumber(10));
 //Menampilkan angka 1-12
 ShowNumber(12)//Argument => Value yang dikirimkan menuju ke parameter
 

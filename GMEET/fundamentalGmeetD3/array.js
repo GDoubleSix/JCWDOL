@@ -50,8 +50,8 @@ console.log(foods.slice(0,2))
 // .Splice : Menghapus & Menambah data
 // .splice (startIndex, totalToDelete, newData)
 const drink = ['haus', 'Es Teh Manis Solo', 'Fore', 'Tomorow']
-// drink.splice(1,1)
-// console.log(drink);
+drink.splice(1,1)
+console.log(drink);
 
 drink.splice(0,1,'janji jiwa') //Ganti index 0 menjadi janji jiwa
 console.log(drink);
