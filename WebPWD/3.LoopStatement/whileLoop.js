@@ -105,18 +105,18 @@
 
 let number = 0 //Membuat variabel init
 
-while (number <= 10) { //Mengevaluasi Condition
+// while (number <= 10) { //Mengevaluasi Condition
 
-    //Mengecek apakah number bernilai 0 jika % 2
-    if (number % 2 === 0) { 
-        //tampilkan task
-        console.log(`Angka Genap ${number}`);
+//     //Mengecek apakah number bernilai 0 jika % 2
+//     if (number % 2 === 0) { 
+//         //tampilkan task
+//         console.log(`Angka Genap ${number}`);
 
-    }else{ //Jika bernilai 1 ketika di % 2
+//     }else{ //Jika bernilai 1 ketika di % 2
 
-        console.log(`Angka ganjil ${number}`);
+//         console.log(`Angka ganjil ${number}`);
 
-    }
-    //menambahkan satu nilai terhadap nilai yang disimpan di variabel
-    number ++
-}
+//     }
+//     //menambahkan satu nilai terhadap nilai yang disimpan di variabel
+//     number ++
+// }
