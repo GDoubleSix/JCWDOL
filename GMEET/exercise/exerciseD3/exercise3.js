@@ -8,14 +8,22 @@
 //kemungkinan pakai unshift
 
 
-for(let i = 0; i < arr.length; i++){
-    let max = 0;
-    for (let j = 0; j < arr.length; j++){
-      if (arr[j][i] > max){
-        max = arr[j][i]
+const createTriangle = (height) => {
+  let pattern = ''; // Inisialisasi pola kosong
+  let currentNumber = 1; // Nomor saat ini untuk digunakan dalam pola
+
+  // Loop untuk setiap baris segitiga
+  for (let i = 1; i <= height; i++) {
+      // Loop untuk menambahkan angka pada setiap baris
+      for (let j = 1; j <= i; j++) {
+          pattern += currentNumber.toString().padStart(2, '0') + ' '; // Tambahkan nomor saat ini ke pola
+          currentNumber++; // Tambahkan nomor saat ini untuk digunakan pada iterasi berikutnya
       }
-      newArr.push(max)
-    }
-    return newArr
+      pattern += '\n'; // Tambahkan newline setelah setiap baris
   }
-  console.log(newArr(10));
+  return pattern; 
+}
+
+// Contoh penggunaan
+console.log(createTriangle(4));
+

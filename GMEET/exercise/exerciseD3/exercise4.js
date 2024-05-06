@@ -9,8 +9,10 @@ const inputNumber = (multiples) => {
     for(i = 1; i <= multiples; i++){
         if(i % 3 === 0 && i % 5 === 0) {
             number.push("FizzBuzz")
+
         }else if (i % 5 === 0) {
             number.push("Buzz")
+
         }else if(i % 3 === 0){
             number.push("Fizz")
         }
