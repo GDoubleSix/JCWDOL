@@ -27,3 +27,18 @@
 //     END FOR
 //     PASS OUT: maxValue
 //     END Function
+
+const recevingArr = (arrInput) =>{
+    let maxValue = [0]
+    for (let i = 0; i < arrInput.length; i++) {
+        if(maxValue < arrInput[i]){
+            maxValue = arrInput[i]
+        }
+        
+    }
+    return maxValue
+}
+
+const inputArr=[0,1,5,9,10]
+
+console.log(recevingArr(inputArr));

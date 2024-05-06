@@ -20,4 +20,4 @@ const inputNumber = (multiples) => {
     }
     return number;
 }
-console.log(inputNumber(15));
+console.log(inputNumber(40));
