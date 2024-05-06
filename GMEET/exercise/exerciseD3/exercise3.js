@@ -9,21 +9,20 @@
 
 
 const createTriangle = (height) => {
-  let pattern = ''; // Inisialisasi pola kosong
-  let currentNumber = 1; // Nomor saat ini untuk digunakan dalam pola
+  let pattern = '';
+  let currentNumber = 1; 
 
-  // Loop untuk setiap baris segitiga
   for (let i = 1; i <= height; i++) {
-      // Loop untuk menambahkan angka pada setiap baris
+      
       for (let j = 1; j <= i; j++) {
-          pattern += currentNumber.toString().padStart(2, '0') + ' '; // Tambahkan nomor saat ini ke pola
-          currentNumber++; // Tambahkan nomor saat ini untuk digunakan pada iterasi berikutnya
+          pattern += currentNumber.toString().padStart(2, '0') + ' '; 
+          currentNumber++; 
       }
-      pattern += '\n'; // Tambahkan newline setelah setiap baris
+      pattern += '\n'; 
   }
   return pattern; 
 }
 
-// Contoh penggunaan
+
 console.log(createTriangle(4));
 
