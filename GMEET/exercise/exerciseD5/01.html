@@ -1,0 +1,28 @@
+<script>
+    products = [{
+            name: 'Apel',
+            price: 10000
+        },
+        {
+            name: 'Anggur',
+            price: 15000
+        },
+        {
+            name: 'Jeruk',
+            price: 20000
+        }
+    ]
+    let printProduct = ''
+    products.forEach((product, index) => {
+        // console.log(product);
+        printProduct += `${index+1}. ${product.name} \n`
+    })
+
+    const selectedProduct = Number(prompt(printProduct)) // Bilangan
+
+    if (selectedProduct <= 0 || selectedProduct > products.length || isNaN(selectedProduct)) {
+        alert('Product Not Found');
+    } else {
+        alert(`${products[selectedProduct-1].name} = Rp.${products[selectedProduct-1].price.toLocaleString('id-ID')}`)
+    }
+</script>

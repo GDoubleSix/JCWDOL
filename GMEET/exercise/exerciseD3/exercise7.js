@@ -5,6 +5,7 @@ const splitString = (string) => {
     return string.split(" ")
 }
 console.log(splitString("hello 8 as world"));
+
 //===============================================================
 //Mdn Web Docs
 // const myString = "Hello 1 word. Sentence number 2.";

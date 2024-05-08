@@ -103,7 +103,7 @@
 
 //Menampilkan ganjil dan genap
 
-let number = 0 //Membuat variabel init
+// let number = 0 //Membuat variabel init
 
 // while (number <= 10) { //Mengevaluasi Condition
 

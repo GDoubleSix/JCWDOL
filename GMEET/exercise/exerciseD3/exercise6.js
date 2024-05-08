@@ -9,3 +9,8 @@ const cariBilangan = (inputBilangan) => {
         return bilanganGenap
 }
 console.log(cariBilangan(10));
+
+//================================================================
+const removeOddNumbers = (arrNumber) => {
+    
+}
