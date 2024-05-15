@@ -7,6 +7,7 @@
 const inputNumber = (multiples) => {
     const number = []
     for(i = 1; i <= multiples; i++){
+        let iString = i.toString()
         if(i % 3 === 0 && i % 5 === 0) {
             number.push("FizzBuzz")
 
@@ -17,9 +18,9 @@ const inputNumber = (multiples) => {
             number.push("Fizz")
         }
         else{
-            number.push(i)
+            number.push(iString)
         }
     }
     return number;
 }
-console.log(inputNumber(40));
+console.log(inputNumber(15));

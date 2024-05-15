@@ -1,0 +1,14 @@
+/*
+    
+    Method yang mengubah nilai asli:
+    1.  .push()
+    2.  .pop()
+    3.  .shift()
+    4.  .unshift()
+    5.  .splice()
+
+    Method yang tidak mengubah nilai asli (hasil operasinya disimpan ke variabel baru)
+    1.  .slice()
+    2.  .inludes()
+    3.  .indexof( )
+*/

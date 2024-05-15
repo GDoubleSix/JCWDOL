@@ -1,0 +1,89 @@
+<script>
+    class Perjalanan {
+        constructor(lokasiMasuk, lokasiKeluar, tipeMobil) {
+            this.lokasiMasuk = lokasiMasuk.toLowerCase();
+            this.lokasiKeluar = lokasiKeluar.toLowerCase();
+            this.tipeMobil = tipeMobil.toLowerCase();
+            this.biayaPerjalanan = {
+                'surabaya': {
+                    mobil: 125000,
+                    bus: 150000,
+                    truk: 160000
+                },
+                'ngawi': {
+                    mobil: 55000,
+                    bus: 60000,
+                    truk: 70000
+                },
+                'solo': {
+                    mobil: 35000,
+                    bus: 50000,
+                    truk: 55000
+                },
+                'batang': {
+                    mobil: 155000,
+                    bus: 160000,
+                    truk: 190000
+                },
+                'palimanan': {
+                    mobil: 90000,
+                    bus: 110000,
+                    truk: 130000
+                },
+                'cikampek': {
+                    mobil: 35000,
+                    bus: 40000,
+                    truk: 50000
+                }
+            };
+        }
+
+        hitungBiaya() {
+            let totalBiaya = 0;
+            let start = false;
+            let end = false;
+
+            // Menghitung biaya perjalanan dari lokasi masuk ke lokasi keluar
+            for (let lokasi in this.biayaPerjalanan) {
+                if (lokasi === this.lokasiMasuk) {
+                    start = true;
+                }
+
+                if (start) {
+                    totalBiaya += this.biayaPerjalanan[lokasi][this.tipeMobil];
+                }
+
+                if (lokasi === this.lokasiKeluar) {
+                    end = true;
+                    break;
+                }
+            }
+
+            // Jika lokasi keluar tidak ditemukan
+            if (!end) {
+                return 0;
+            }
+
+            return totalBiaya;
+        }
+    }
+
+    // Mendapatkan input dari pengguna menggunakan prompt
+    const lokasiMasuk = prompt('Masukkan lokasi masuk tol:');
+    const lokasiKeluar = prompt('Masukkan lokasi keluar tol:');
+    const tipeMobil = prompt('Pilih tipe kendaraan (mobil/bus/truk):');
+
+    // Membuat objek Perjalanan berdasarkan input pengguna
+    const perjalanan = new Perjalanan(lokasiMasuk, lokasiKeluar, tipeMobil);
+
+    // Menghitung biaya perjalanan
+    const totalBiaya = perjalanan.hitungBiaya();
+
+    // Menampilkan total biaya perjalanan
+    if (totalBiaya > 0) {
+        alert(
+            `Total biaya perjalanan dari ${lokasiMasuk} ke ${lokasiKeluar} dengan ${tipeMobil} adalah Rp.${totalBiaya.toLocaleString()}`);
+    } else {
+        alert('Rute perjalanan tidak valid!');
+    }
+</script>

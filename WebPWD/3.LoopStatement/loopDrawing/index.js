@@ -23,13 +23,13 @@
 
 // let stars = ''
 // for(let i=0; i<=5; i++){
-    // for(let j = 1; j<=i; j++){
-        //     // j += i
-        //     // stars += '*'
-        //     stars +=j
-        // }
-        // stars += '*'
-        // }
+//     for(let j = 1; j<=i; j++){
+//             // j += i
+//             // stars += '*'
+//             stars +=j
+//         }
+//         stars += '*'
+//         }
         
 // console.log(stars);
         
@@ -47,20 +47,49 @@
 //Membuat Bentuk Kotak
 /////////////////////////////
 
-let stars = ''
-let rows = 3
+// let stars = ''
+// let rows = 3
 
 // Loop i untuk membuat baris
 // Banyaknya loop i ditentukan dari variabel rows
-for (let i = 1; i<=rows; i++){
+// for (let i = 1; i<=rows; i++){
     
     //Loop j untuk menambahkan bintang per baris
     // Banyaknya bintang setiap baris = jumlah baris
-    for(let j = 1; j<=rows; j++){
+    // for(let j = 1; j<=rows; j++){
         //Menambahkan 1 bintang dari nilai sebelmunya
-        stars += ' * '
-    }
+        // stars += ' * '
+    // }
     //Menambahkan new line setiap selesai loop j / 1 baris bintang
-    stars += '\n'
+    // stars += '\n'
+// }
+// console.log(stars);
+
+
+//////////////////////////////////////
+//Membuat Bentuk Segitiga (Siku-Siku)
+//////////////////////////////////////
+
+// Persegi : Jumlah bintang perbaris ditentukan dari total baris
+// Segitiga siku2 : Jumlah bintang perbaris ditentukan dari "posisi baris" nya / iterasi
+
+// baris ke 1 : *
+// baris ke 2 : * *
+// baris ke 3 : * * *
+// baris ke 4 : * * * *
+// baris ke 5 : * * * * *
+
+let segitiga = ''
+let height = 6
+
+// loop i digunakan untuk menentukan seberapa banyak baris
+for(let i=1; i<=height; i++){
+    
+    //Loop j digunakan untuk menentukan banyak bintang perbaris
+    for(let j=1; j<=i; j++){
+        // j -= i
+        segitiga += '* '
+    }
+    segitiga += '\n'
 }
-console.log(stars);
+console.log(segitiga);
